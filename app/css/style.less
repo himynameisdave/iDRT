@@ -1,0 +1,46 @@
+@import (reference) "core.less";
+//	(actual styles go here)
+
+// 	Reset:
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, 
+a, form, label, table, caption, tbody, 
+tfoot, thead, tr, th, td, canvas, footer, header, 
+menu, nav {
+  margin:       0;
+  padding:      0;
+  border:       0;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section 
+{ display:      block; }
+
+*{ .box-sizing() }
+body, html { 
+  margin: 0; 
+  font-family: 'Roboto', 'Helvetica', 'Helvetica Neue', Arial, sans-serif; 
+  height: 100%; 
+  font-size:    @base-font-size; 
+  font-weight:  @base-font-weight; 
+  line-height:  @base-line-height;
+  color:        @offBlack;
+}
+ol, ul{
+  list-style:     none;
+}
+img { max-width:100%; }
+input[type="text"], input[type="number"], input[type="password"], textarea, select {
+  position: relative;
+  font-family:inherit; 
+  font-size:inherit;
+  font-weight: inherit;
+  height:auto;
+}
+table           {
+  border-collapse:  collapse;
+  border-spacing:   0;
+}
+svg { overflow:visible; }
+
+input[type="submit"], button { outline: none; &:focus{ outline: none; } }
