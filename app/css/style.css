@@ -1,1 +1,128 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:900,400,700,400italic,300italic,500,100italic,500italic,300,700italic,100,900italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,900);
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+canvas,
+footer,
+header,
+menu,
+nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body,
+html {
+  margin: 0;
+  font-family: 'Varela Round', 'Arial Round', 'Gill Sans Round', Helvetica, Arial, sans-serif;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 25.88854382px;
+  color: #333333;
+}
+ol,
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+input[type="text"],
+input[type="number"],
+input[type="password"],
+textarea,
+select {
+  position: relative;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  height: auto;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+svg {
+  overflow: visible;
+}
+input[type="submit"],
+button {
+  outline: none;
+}
+input[type="submit"]:focus,
+button:focus {
+  outline: none;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.app {
+  margin: 0 auto;
+  display: block;
+  width: 284px;
+  height: 600px;
+  background-image: url('../img/phone.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.app .app-wrap {
+  position: absolute;
+  top: 86px;
+  left: 50%;
+  margin-left: -120.5px;
+  max-width: 241px;
+  max-height: 424px;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: #009348;
+  background: -moz-linear-gradient(45deg, #009348 1%, #00a651 100%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(1%, #009348), color-stop(100%, #00a651));
+  background: -webkit-linear-gradient(45deg, #009348 1%, #00a651 100%);
+  background: -o-linear-gradient(45deg, #009348 1%, #00a651 100%);
+  background: -ms-linear-gradient(45deg, #009348 1%, #00a651 100%);
+  background: linear-gradient(45deg, #009348 1%, #00a651 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009348', endColorstr='#00a651', GradientType=1);
+}
