@@ -93,36 +93,43 @@ input[type="submit"]:focus,
 button:focus {
   outline: none;
 }
-body {
+html,
+body,
+.ui-view-box,
+.app-wrap {
   width: 100vw;
   height: 100vh;
+  background: #00a550;
 }
-.app {
-  margin: 0 auto;
-  display: block;
-  width: 284px;
-  height: 600px;
-  background-image: url('../img/phone.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
+.bb {
+  background: blue;
 }
-.app .app-wrap {
-  position: absolute;
-  top: 86px;
-  left: 50%;
-  margin-left: -120.5px;
-  max-width: 241px;
-  max-height: 424px;
-  display: block;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  background: #009348;
-  background: -moz-linear-gradient(45deg, #009348 1%, #00a651 100%);
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(1%, #009348), color-stop(100%, #00a651));
-  background: -webkit-linear-gradient(45deg, #009348 1%, #00a651 100%);
-  background: -o-linear-gradient(45deg, #009348 1%, #00a651 100%);
-  background: -ms-linear-gradient(45deg, #009348 1%, #00a651 100%);
-  background: linear-gradient(45deg, #009348 1%, #00a651 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009348', endColorstr='#00a651', GradientType=1);
+.rr {
+  background: red;
+}
+.topbar {
+  height: 80px;
+  width: 100vw;
+  background: lime;
+  position: fixed;
+  top: 0;
+}
+.routing {
+  margin-top: 80px;
+  height: 61.5%;
+  background: aquamarine;
+}
+.action-btns {
+  height: 5%;
+  background: salmon;
+}
+.action-btns .action-btn-box {
+  text-align: center;
+}
+footer.footer {
+  bottom: 0;
+  position: fixed;
+  width: 100vw;
+  background: forestgreen;
+  height: 80px;
 }

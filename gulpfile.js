@@ -110,7 +110,7 @@ gulp.task('production', function(){
 
 gulp.task('reload', function(){
 	plug.livereload.listen()
-	gulp.watch(['app/css/*.css','app/js/app.js','app/index.html'], function(){
+	gulp.watch(['app/css/*.css','app/js/app.js','app/index.html', 'app/partials/*.html'], function(){
 		console.log('RELOADING PAGE');
 	})
 	.on('change', plug.livereload.changed);
