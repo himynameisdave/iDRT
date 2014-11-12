@@ -2,6 +2,12 @@
 //	(actual styles go here)
 
 @drtGreen: #00a550;
+@drkGreen: #006738;
+
+//Media Queries
+@med-tiny: ~"only screen and ";
+
+
 
 // 	Reset:
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, 
@@ -48,7 +54,11 @@ svg { overflow:visible; }
 input[type="submit"], button { outline: none; &:focus{ outline: none; } }
 
 
-html, body, .ui-view-box, .app-wrap { width: 100vw; height: 100vh; background: @drtGreen; }
+html, body, .ui-view-box, .app-wrap { width: 100vw; height: 100vh; background: @drtGreen; color: #fff; }
+
+.fullheight {
+  height:100%;
+}
 
 //just for quickly seeing teh blocks
 .bb {
@@ -60,34 +70,107 @@ html, body, .ui-view-box, .app-wrap { width: 100vw; height: 100vh; background: @
 
 
 @topbarHeight: 80px;
-
-
 .topbar {
 
   height: @topbarHeight;
   width: 100vw;
-  background: lime;
   position: fixed;
   top: 0;
 
-  .svg-corner {
+    .svg-corner {
+      background: url('../img/drt-svg.svg');
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: -100;
+    }
+    .nav-btn  {
+      background: @drtGreen;
+      .circle;
+      .clickable;
+      border: 2px solid #fff;
+      height: 35px;
+      margin-top: 15px;
+      width: 35px;
+      text-align: center;
+      .trans(transform, 0.225s);
+      &:hover { 
+        .scale(1.075);
+      }
+      i.fa  {
+        .mauto();
+        margin-top: 4px;
+        font-size: 22px; 
+      }
 
+    }
+    @logoRatio: 2.475;
+    @logoHeight: 50px;
+    .logo {
+      background: url('../img/iDRT-logo.svg');
+      background-position: 50% 50%;
+      background-size: cover; 
+      
+      height: @logoHeight;
+      width: @logoHeight * @logoRatio;
 
-  }
+      margin-top: (@topbarHeight - @logoHeight) / 2 - 5; // the minus 5 tacked to the end here is to better center it vertically with nav-btn
 
-  .nav-icon  {
-
-  }
-
-
+      float: right;
+    } 
 } 
 
 //  Heavy work will be around making sure this guys height looks good
 //  by using various height-based media queries
 .routing {
+  .box-sizing();
   margin-top: @topbarHeight;
   height: 61.5%; // the amount it needs to work the height of PORTRAIT tiny iphone
-  background: aquamarine;
+  // background: aquamarine;
+
+  padding-top: 10%;
+
+
+  .selector {
+    .mt1; .mb1;
+  }
+  .selector-label {
+    color: #fff;
+    display: block;
+    margin-right: 20px;
+    text-align: right;
+    .selector-label-hilite {
+      color: #FBAF3F;
+    }
+  } 
+
+  .selector-border {
+    background: #fff;
+    height: 7px;
+    margin: 0 0 0 -15px;
+    width: 100%;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  select.selector-selection {
+    .appearance-none();
+    background: @drkGreen;
+    border: 0;
+    border-radius: 0;
+    border-bottom-right-radius: 10px;
+    margin-left: -30px;
+    padding-left: 30px;
+    padding: 3px 0 3px 30px;
+    width: 100%;
+
+  }
+
+
 
 }
 

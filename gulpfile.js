@@ -89,10 +89,10 @@ gulp.task('production', function(){
 		console.log('Step 1: Copy partials');
 			gulp.src( 'app/partials/*.html' )
 				.pipe( gulp.dest('public/partials/') );
-		//Step 2: Copy assets
-		// console.log('Step 2: Copy assets');
-		// 	gulp.src( 'app/assets/**/' )
-		// 		.pipe( gulp.dest('public/assets/') );
+		//Step 2: Copy fonts
+		// console.log('Step 2: Copy fonts');
+		// 	gulp.src( 'app/fonts/*' )
+		// 		.pipe( gulp.dest('public/fonts/') );
 		//Step 3: angulr-htmlify
 		console.log('Step 3: angular htmlify the index page');
 			gulp.src( 'app/index.html' )
