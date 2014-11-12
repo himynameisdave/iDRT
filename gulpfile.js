@@ -15,14 +15,14 @@ gulp.task('production', function(){
 	
 	/////RUN JS PRODUCTION SCRIPT
 		//STEP 1: ng-annotate the prod.app.js file
-		// console.log('Step 1: ng-annotate');
-		// 	gulp.src('app/js/app.js')
-		//         .pipe(plug.ngAnnotate())
-		//         .on('error', function(e){
-		//         	console.log('ng-annotate error');
-		//         	console.log(e);
-		//         })
-		//         .pipe(gulp.dest('app/lib/js/'));
+		console.log('Step 1: ng-annotate');
+			gulp.src('app/js/app.js')
+		        // .pipe(plug.ngAnnotate())
+		        // .on('error', function(e){
+		        // 	console.log('ng-annotate error');
+		        // 	console.log(e);
+		        // })
+		        .pipe(gulp.dest('app/lib/js/'));
 
 		//STEP 2: uglify lib js files
 		console.log('Step 2: Uglify lib js files');
@@ -86,13 +86,13 @@ gulp.task('production', function(){
 	
 	/////COPY OVER INDEX.HTML AND OTHER ASSETS
 		//Step 1: Copy index and favi
-		console.log('Step 1: Copy  favicon');
-			gulp.src( 'app/favicon.ico' )
-				.pipe( gulp.dest('public/') );
+		console.log('Step 1: Copy partials');
+			gulp.src( 'app/partials/*.html' )
+				.pipe( gulp.dest('public/partials/') );
 		//Step 2: Copy assets
-		console.log('Step 2: Copy assets');
-			gulp.src( 'app/assets/**/' )
-				.pipe( gulp.dest('public/assets/') );
+		// console.log('Step 2: Copy assets');
+		// 	gulp.src( 'app/assets/**/' )
+		// 		.pipe( gulp.dest('public/assets/') );
 		//Step 3: angulr-htmlify
 		console.log('Step 3: angular htmlify the index page');
 			gulp.src( 'app/index.html' )
