@@ -1,16 +1,17 @@
-//      The Dave Lunny Core Less Library
-//           - - - - - - - - - - -    
-//                  v.0.2.4
-//           - - - - - - - - - - -
-//
-//                 LICENSE:        
-//       using this file or it's comiled  
-//      form are totally allowed, go nuts.
+/*//////////////////////////////////////////////////////
+[  ]                                                [  ]
+[  ]          The LESS-core LESS Library            [  ]
+[  ]                    v0.3.1                      [  ]
+[  ]                                                [  ]
+[  ]            written & maintained by             [  ]
+[  ]            Dave Lunny @dave_lunny              [  ]
+[  ]                                                [  ]
+//////////////////////////////////////////////////////*/
 
 
 //  Grab Roboto (In production, move this to be a <link> in the html)
-@import url(http://fonts.googleapis.com/css?family=Roboto:900,400,700,400italic,300italic,500,100italic,500italic,300,700italic,100,900italic);
-@import url(http://fonts.googleapis.com/css?family=Lato:100,900);
+// @import url(http://fonts.googleapis.com/css?family=Roboto:900,400,700,400italic,300italic,500,100italic,500italic,300,700italic,100,900italic);
+// @import url(http://fonts.googleapis.com/css?family=Lato:100,900);
 
 
 //       MAIN VARS     
@@ -57,11 +58,13 @@
   -ms-user-select: @user-select;
   user-select: @user-select;
 }
+//depreciated. autoprefixer removes dated border-radius prefixes anyway.
 .border-radius (@radius) {
    -webkit-border-radius: @radius;
       -moz-border-radius: @radius;
            border-radius: @radius;
 }
+//depreciated. autoprefixer removes dated border-radius prefixes anyway.
 .border-radius-custom (@topleft, @topright, @bottomright, @bottomleft) {
   -webkit-border-top-left-radius:         @topleft;
   -webkit-border-top-right-radius:        @topright;
@@ -88,10 +91,16 @@
         box-shadow: @h-shadow @v-shadow @blur @spread @color @inset; 
 }
 .trans(@prop, @speed){
-  -webkit-transition:    @prop @speed ease;
-     -moz-transition:    @prop @speed ease;
-       -o-transition:    @prop @speed ease;
-          transition:    @prop @speed ease;
+  -webkit-transition:    @prop @speed;
+     -moz-transition:    @prop @speed;
+       -o-transition:    @prop @speed;
+          transition:    @prop @speed;
+}
+.trans-ease(@prop, @speed, @ease){
+  -webkit-transition:    @prop @speed;
+     -moz-transition:    @prop @speed;
+       -o-transition:    @prop @speed;
+          transition:    @prop @speed;
 }
 .backface(@backface){
   -webkit-backface-visibility:    @backface;
@@ -145,13 +154,8 @@
           animation-iteration-count: infinite;
 }
 
-.appearance-none() {
-  -webkit-appearance:     none;
-    -moz-appearance:      none;
-      appearance:         none;
-}
-
 // Used for simple gradients with two colors (start and end)
+// untested
 .bg-gradient-vert(@startColor, @endColor){
     background:       @startColor;
     background:       -moz-linear-gradient(top,  @startColor 0%, @endColor 100%); /* FF3.6+ */
@@ -172,23 +176,11 @@
   background: linear-gradient(to right,  @startColor 0%, @endColor 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@startColor', endColorstr='@endColor',GradientType=1 );
 }
-
-//    UTILITIES:
-// .for https://github.com/seven-phases-max/less.curious/blob/master/src/for.less
-.for(@i, @n) {.-each(@i)}
-.for(@n)     when (isnumber(@n)) {.for(1, @n)}
-.for(@i, @n) when not (@i = @n)  {
-    .for((@i + (@n - @i) / abs(@n - @i)), @n);
+.appearance-none(){
+  -webkit-appearance: none;
+    -moz-appearance: none;
+      appearance: none;
 }
-
-// .for-each  https://github.com/seven-phases-max/less.curious/blob/master/src/for.less
-.for(@array)   when (default()) {.for-impl_(length(@array))}
-.for-impl_(@i) when (@i > 1)    {.for-impl_((@i - 1))}
-.for-impl_(@i)                  {.-each(extract(@array, @i))}
-// (i have no idea what im doing here!)
-///////////////////////////////////////
-
-
 //    CORE CLASSES
 .ib  {
   display:        inline-block;
@@ -439,6 +431,13 @@
 
 
 
+////////////////////////
+//    BTN CLASSES     //
+////////////////////////
+
+.btn {
+
+}
 
 
 

@@ -1,15 +1,24 @@
 @import (reference) "core.less";
-//	(actual styles go here)
+//  (actual styles go here)
 
 @drtGreen: #00a550;
 @drkGreen: #006738;
 
 //Media Queries
-@med-tiny: ~"only screen and ";
+@med-xs: ~"(min-width : 300px)";
+@med-sm: ~"(min-width : 420px)";
+@med-md: ~"(min-width : 620px)";
+@med-lg: ~"(min-width : 767px)";
 
 
 
-// 	Reset:
+// @med-xs: ~"screen and (min-width : 420px)";
+// @med-sm: ~"screen and (min-width : 620px)";
+// @med-md: ~"screen and (min-width : 767px)";
+
+
+
+//  Reset:
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, 
 a, form, label, table, caption, tbody, 
 tfoot, thead, tr, th, td, canvas, footer, header, 
@@ -60,14 +69,20 @@ html, body, .ui-view-box, .app-wrap { width: 100vw; height: 100vh; background: @
   height:100%;
 }
 
-//just for quickly seeing teh blocks
-.bb {
-  background: blue;
-}
-.rr{
-  background: red;
-}
+//  DONT COPY - THIS IS VERY SPECIFIC TO THIS STYLE
+.btn  {
+  .appearance-none();
+  .clickable();
+  .mauto();
+  .user-select(none);
+  background: 0;
+  color: inherit;
+  display: block;
+  padding: 10px 5px;
+  border: 2px solid #fff;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 
+}
 
 @topbarHeight: 80px;
 .topbar {
@@ -94,7 +109,7 @@ html, body, .ui-view-box, .app-wrap { width: 100vw; height: 100vh; background: @
       .clickable;
       border: 2px solid #fff;
       height: 35px;
-      margin-top: 15px;
+      .mt3; .ml2;
       width: 35px;
       text-align: center;
       .trans(transform, 0.225s);
@@ -109,7 +124,7 @@ html, body, .ui-view-box, .app-wrap { width: 100vw; height: 100vh; background: @
 
     }
     @logoRatio: 2.475;
-    @logoHeight: 50px;
+    @logoHeight: 42px;
     .logo {
       background: url('../img/iDRT-logo.svg');
       background-position: 50% 50%;
@@ -119,7 +134,7 @@ html, body, .ui-view-box, .app-wrap { width: 100vw; height: 100vh; background: @
       width: @logoHeight * @logoRatio;
 
       margin-top: (@topbarHeight - @logoHeight) / 2 - 5; // the minus 5 tacked to the end here is to better center it vertically with nav-btn
-
+      .mr2;
       float: right;
     } 
 } 
@@ -129,30 +144,38 @@ html, body, .ui-view-box, .app-wrap { width: 100vw; height: 100vh; background: @
 .routing {
   .box-sizing();
   margin-top: @topbarHeight;
-  height: 61.5%; // the amount it needs to work the height of PORTRAIT tiny iphone
-  // background: aquamarine;
-
+  // height: 61.5%; // the amount it needs to work the height of PORTRAIT tiny iphone
   padding-top: 10%;
 
 
   .selector {
     .mt1; .mb1;
   }
+}
   .selector-label {
     color: #fff;
     display: block;
-    margin-right: 20px;
+    font-size: 14px;
+    margin-right: 12.5%;
     text-align: right;
     .selector-label-hilite {
       color: #FBAF3F;
     }
+
+    @media @med-sm {
+      font-size: 16px;
+      line-height: 1.618;
+    }
+
   } 
 
+
+  @leftside: -30px;
   .selector-border {
     background: #fff;
     height: 7px;
-    margin: 0 0 0 -15px;
-    width: 100%;
+    margin: 0 0 0 -30px;
+    width: 96%;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
   }
@@ -163,51 +186,62 @@ html, body, .ui-view-box, .app-wrap { width: 100vw; height: 100vh; background: @
     border: 0;
     border-radius: 0;
     border-bottom-right-radius: 10px;
-    margin-left: -30px;
-    padding-left: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: -20px;
     padding: 3px 0 3px 30px;
-    width: 100%;
+    width: 93%;
+
+    .trans(background, 0.4s);
+    &:hover,
+    &:focus {
+      outline: none;
+      background: #FBAF3F;
+    }
+
+    @media @med-sm {
+        font-size: 16px;
+      }
 
   }
-
-
-
-}
 
 
 
 
 
 .action-btns {
+  .mt4;
   height: 5%;
-  background: salmon;
+
 
   .action-btn-box {
     text-align: center;
-  }
+
+    .btn {
+      width: 75%;
+      font-size: 13px;
+      border-radius: 1px;
+      .trans(all, 0.325s);
+
+      &:hover,
+      //&:focus  after click/tapping, focus remains which is weird looking
+      {
+        background: #fff;
+        border-radius: 4px;
+        color: @drtGreen;
+      }
+      &:active {
+       background: @drtGreen;
+        color: #fff; 
+      }
+
+      @media @med-sm {
+        font-size: 15px;
+      }
+
+
+
+    }
+
+  } 
 }
-
-
-
-
-
-footer.footer {
-  bottom: 0;
-  position: fixed;
-  width: 100vw;
-  background: forestgreen;
-  height: 80px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
