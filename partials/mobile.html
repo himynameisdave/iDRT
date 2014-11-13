@@ -1,25 +1,61 @@
 <div ng-controller="MobileCtrl" class="container-fluid app-wrap">
 
 	<header class="row topbar">
-		<!-- <div class="svg-corner"></div> -->
-		<div class="col-xs-2 bb">
-			nav btn
+		<div class="svg-corner"></div>
+		<div class="col-xs-2">
+			<div class="nav-btn">
+				<i class="fa fa-arrow-left"></i>
+			</div>
 		</div>	
-		<div class="col-xs-3 col-xs-offset-7 rr">
-			logo
+		<div class="col-xs-3 col-xs-offset-7 fullheight">
+			<div class="logo">
+
+			</div>
 		</div>
 	</header>
 
 	<section class="row routing">
 
+		<!--Where are you?-->
+		<div class="col-xs-12 col-sm-10 col-md-8 selector">
+			<label class="selector-label">
+				<span class="selector-label-hilite">What</span> region are you looking for?
+			</label>
+			<div class="selector-border"></div>
+			<select class="selector-selection">
+				<option>900 - Regional</option>
+				<option>100 - Pickering</option>
+				<option>200 - Ajax</option>
+				<option>300 - Whitby</option>
+				<option>400 - Oshawa</option>
+				<option>500 - </option>
+			</select>
+		</div>
+
 		<!--When are you travelling-->
-		<div class="col-xs-7">
-			When r u traveling?
+		<div class="col-xs-12 col-sm-10 col-md-8 selector">
+			<label class="selector-label">
+				<span class="selector-label-hilite">When</span> are you travelling?
+			</label>
+			<div class="selector-border"></div>
+			<select class="selector-selection">
+				<option>Morning</option>
+				<option>Daytime</option>
+				<option>Night</option>
+			</select>
 		</div>
 
 		<!--What route-->
-		<div class="col-xs-7">
-			Wat route?
+		<div class="col-xs-12 col-sm-10 col-md-8 selector">
+			<label class="selector-label">
+				<span class="selector-label-hilite">What</span> route are you taking?
+			</label>
+			<div class="selector-border"></div>
+			<select class="selector-selection">
+				<option>915 - TawnTawn</option>
+				<option>900 - DRT Pulsating Penis</option>
+				<option>120-something - AMBERLEA</option>
+			</select>
 		</div>
 
 	</section>
@@ -27,21 +63,17 @@
 	<section class="row action-btns">
 
 		<div class="col-xs-6 action-btn-box">
-			<div class="action-btn-sched">
+			<button class="btn action-btn-sched">
 				Get Schedule
-			</div>
+			</button>
 		</div>
 
 		<div class="col-xs-6 action-btn-box">
-			<div class="action-btn-map">
+			<button class="btn action-btn-map">
 				Get Map
-			</div>
+			</button>
 		</div>
 
 	</section>
-
-	<footer class="row footer">
-		<!-- Some design junk goes here -->
-	</footer>
 
 </div>
