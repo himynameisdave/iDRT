@@ -1,15 +1,122 @@
 [{
 	"routes" : {
-		"900": [ 
+		"regional": [ 
 					{
 						"num"  : "900",
-						"name" : ""
-					}
-				,	{
-
-					}
-
-				]
-
+						"name" : "DRT Pulse",
+						"direction": true,
+						"west": {
+						  "weekday": "link/to/weekday",
+						  "evening": "link/to/evening",
+						  "saturday": "link/to/saturday",
+						  "sun_hol": "link/to/sun_hol"
+						},
+						"east": {
+						  "weekday": "link/to/weekday",
+						  "evening": "link/to/evening",
+						  "saturday": "link/to/saturday",
+						  "sun_hol": "link/to/sun_hol"
+					  }
+					  
+					},
+          {
+						"num"  : "910",
+						"name" : "Whitby GO / Campus Connect",
+						"direction": true,
+						"north": {
+						  "weekday": "link/to/weekday",
+						  "evening": "link/to/evening",
+						  "saturday": "link/to/saturday",
+						  "sun_hol": "link/to/sun_hol"
+						},
+						"south": {
+						  "weekday": "link/to/weekday",
+						  "evening": "link/to/evening",
+						  "saturday": "link/to/saturday",
+						  "sun_hol": "link/to/sun_hol"
+					  }
+          },
+          {
+						"num"  : "915",
+						"name" : "Taunton",
+						"direction": true,
+						"west": {
+						  "weekday": "link/to/weekday",
+						  "evening": "link/to/evening",
+						  "saturday": "link/to/saturday",
+						  "sun_hol": "link/to/sun_hol"
+						},
+						"east": {
+						  "weekday": "link/to/weekday",
+						  "evening": "link/to/evening",
+						  "saturday": "link/to/saturday",
+						  "sun_hol": "link/to/sun_hol"
+					  }
+          },
+          {
+						"num"  : "916",
+						"name" : "Rossland",
+						"direction": true,
+						"west": {
+						  "weekday": "link/to/weekday",
+						  "evening": "link/to/evening",
+						  "saturday": "link/to/saturday",
+						  "sun_hol": "link/to/sun_hol"
+						},
+						"east": {
+						  "weekday": "link/to/weekday",
+						  "evening": "link/to/evening",
+						  "saturday": "link/to/saturday",
+						  "sun_hol": "link/to/sun_hol"
+					  }
+          },
+          {
+						"num"  : "922",
+						"name" : "Bloor/Victoria",
+						"direction": false,
+					  "sched": {
+					    "weekday": "link/to/weekday",
+						  "evening": "link/to/evening"
+					  }	
+          },
+          {
+						"num"  : "923",
+						"name" : " Bayly / U of T Scarborough",
+						"direction": false,
+					  "sched": {
+					    "weekday": "link/to/weekday",
+						  "evening": "link/to/evening",
+						  "saturday": "link/to/saturday",
+						  "sun_hol": "link/to/sun_hol"
+					  }
+          },
+          {
+						"num"  : "950",
+						"name" : " Uxbrige / Port Perry  / UOIT",
+						"direction": false,
+					  "sched": {
+					    "weekday": "link/to/weekday",
+						  "evening": "link/to/evening"
+					  }
+          }
+				],
+		"pickering": [
+		    
+		    ],
+		"ajax": [
+		    
+		    ],
+		"whitby": [
+		    
+		    ],
+		"oshawa": [
+		    
+		    ],
+		"clarington": [
+		    
+		    ],
+		"other": [
+		    
+		    ]
 	}
 }]
