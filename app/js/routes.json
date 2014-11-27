@@ -1,4 +1,6 @@
-[{
+{ "regions" : [
+              "Regional", "Pickering", "Ajax", "Whitby", "Oshawa", "Clarington", "Other"
+            ],
   "routes" : {
     "regional": [
           {
@@ -723,4 +725,4 @@
           }
         ]
   }
-}]
+}
