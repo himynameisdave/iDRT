@@ -1,79 +1,74 @@
-<div ng-controller="MobileCtrl" class="container-fluid app-wrap">
+<div data-ng-controller="MobileCtrl" class="container-fluid app-wrap">
 
-	<header class="row topbar">
-		<div class="svg-corner"></div>
-		<div class="col-xs-2">
-			<div class="nav-btn">
-				<i class="fa fa-arrow-left"></i>
-			</div>
-		</div>	
-		<div class="col-xs-3 col-xs-offset-7 fullheight">
-			<div class="logo">
+  <header class="row topbar">
+    <div class="svg-corner"></div>
+    <div class="col-xs-2">
+      <div class="nav-btn">
+        <i class="fa fa-arrow-left"></i>
+      </div>
+    </div>  
+    <div class="col-xs-3 col-xs-offset-7 fullheight">
+      <div class="logo">
 
-			</div>
-		</div>
-	</header>
+      </div>
+    </div>
+  </header>
 
-	<section class="row routing">
+  <section class="row routing">
 
-		<!--Where are you?-->
-		<div class="col-xs-12 col-sm-10 col-md-8 selector">
-			<label class="selector-label">
-				<span class="selector-label-hilite">What</span> region are you looking for?
-			</label>
-			<div class="selector-border"></div>
-			<select class="selector-selection">
-				<option>900 - Regional</option>
-				<option>100 - Pickering</option>
-				<option>200 - Ajax</option>
-				<option>300 - Whitby</option>
-				<option>400 - Oshawa</option>
-				<option>500 - </option>
-			</select>
-		</div>
+    <!--Where are you?-->
+    <div  class="col-xs-12 col-sm-10 col-md-8 selector">
+      <label class="selector-label">
+        <span class="selector-label-hilite">What</span> region are you looking for?
+      </label>
+      <div class="selector-border"></div>
+      <select   class="selector-selection"
+                data-ng-model="selected.region"
+                data-ng-options="region as region for region in regions">
+      </select>
+    </div>
 
-		<!--When are you travelling-->
-		<div class="col-xs-12 col-sm-10 col-md-8 selector">
-			<label class="selector-label">
-				<span class="selector-label-hilite">When</span> are you travelling?
-			</label>
-			<div class="selector-border"></div>
-			<select class="selector-selection">
-				<option>Morning</option>
-				<option>Daytime</option>
-				<option>Night</option>
-			</select>
-		</div>
+    <!--What route-->
+    <div  class="col-xs-12 col-sm-10 col-md-8 selector"
+          data-ng-show="selected.region">
+      <label class="selector-label">
+        <span class="selector-label-hilite">What</span> route are you taking?
+      </label>
+      <div class="selector-border"></div>
+      <select   class="selector-selection"
+                data-ng-model="selected.route"
+                data-ng-options="route as route for route in routesList">
+      </select>
+    </div>
 
-		<!--What route-->
-		<div class="col-xs-12 col-sm-10 col-md-8 selector">
-			<label class="selector-label">
-				<span class="selector-label-hilite">What</span> route are you taking?
-			</label>
-			<div class="selector-border"></div>
-			<select class="selector-selection">
-				<option>915 - TawnTawn</option>
-				<option>900 - DRT Pulsating Penis</option>
-				<option>120-something - AMBERLEA</option>
-			</select>
-		</div>
+    <!--What route-->
+    <div  class="col-xs-12 col-sm-10 col-md-8 selector"
+          data-ng-show="selected.route">
+      <label class="selector-label">
+        <span class="selector-label-hilite">When</span> are you traveling?
+      </label>
+      <div class="selector-border"></div>
+      <select   class="selector-selection"
+                data-ng-model="selected.time">
+      </select>
+    </div>
 
-	</section>
+  </section>
 
-	<section class="row action-btns">
+  <section class="row action-btns">
 
-		<div class="col-xs-6 action-btn-box">
-			<button class="btn action-btn-sched">
-				Get Schedule
-			</button>
-		</div>
+    <div class="col-xs-6 action-btn-box">
+      <button class="btn action-btn-sched">
+        Get Schedule
+      </button>
+    </div>
 
-		<div class="col-xs-6 action-btn-box">
-			<button class="btn action-btn-map">
-				Get Map
-			</button>
-		</div>
+    <div class="col-xs-6 action-btn-box">
+      <button class="btn action-btn-map">
+        Get Map
+      </button>
+    </div>
 
-	</section>
+  </section>
 
 </div>
