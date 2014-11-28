@@ -32,14 +32,13 @@ gulp.task('build-js', function(){
           console.log(e);
         })
     .pipe(gulp.dest('app/lib/js/'))
-    .pipe(gulp.src( ['app/lib/js/*.js'] ))
-    // .pipe(gulp.src([
-    //       'app/lib/js/angular.js',
-    //       'app/lib/js/jquery.js',
-    //       'app/lib/js/ui-router.js',
-    //       'app/lib/js/ng-touch.js',
-    //       'app/lib/js/app.js'
-    //     ]))
+    .pipe(gulp.src( [
+          'app/lib/js/angular.js',
+          'app/lib/js/jquery.js',
+          'app/lib/js/ui-router.js',
+          'app/lib/js/ng-touch.js',
+          'app/lib/js/app.js'
+        ] ))
     .pipe(plug.uglify())
     .on('error', function(e){
           console.log('uglify js files error');
@@ -81,13 +80,16 @@ gulp.task('build-css', function(){
     .pipe(plug.csscomb())
     .pipe(gulp.dest('app/lib/css/'));
 
-  console.log('Step 5: Minify & Concat CSS');
+  console.log('Step 5: Minify, Uncss & Concat CSS');
   gulp.src( 'app/lib/css/*.css' )
     .pipe(plug.concatCss('core.css'))
+    .pipe(plug.uncss({
+      //  globbing dont work none
+      html: [ 'app/index.html', 'app/partials/desktop.html', 'app/partials/mobile.html' ]
+    }))
     .pipe(plug.minifyCss())
     .pipe(gulp.dest('public/css/'));
 
-///TODO: Add uncss right here!
 });
 
 
@@ -106,10 +108,25 @@ gulp.task( 'build-assets', function(){
     gulp.src( 'app/fonts/*' )
         .pipe( gulp.dest('public/fonts/') );
 
-  console.log('Step 9: Angular HTML-ify');
+  console.log('Step 8: Copy fonts');
+    gulp.src( 'app/fonts/*' )
+        .pipe( gulp.dest('public/fonts/') );
+
+  console.log('Step 9: Angular HTML-ify & copy over altered HTML file');
     gulp.src( 'app/index.html' )
         .pipe(plug.angularHtmlify())
+        .pipe(plug.htmlReplace({
+              js: {
+                src: 'js/core.js',
+                tpl: '<script type="text/javascript" src="%s"></script>'
+              },
+              css: {
+                src: 'css/core.css',
+                tpl: '<link rel="stylesheet" type="text/css" href="%s" />'
+              }
+        }))
         .pipe(gulp.dest( 'public/' ));
+
 });
 
 
