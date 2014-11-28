@@ -1,0 +1,728 @@
+{ "regions" : [
+              "Regional", "Pickering", "Ajax", "Whitby", "Oshawa", "Clarington", "Other"
+            ],
+  "routes" : {
+    "regional": [
+          {
+            "num"  : "900",
+            "name" : "DRT Pulse",
+            "direction": true,
+            "west": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            },
+            "east": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "910",
+            "name" : "Whitby GO / Campus Connect",
+            "direction": true,
+            "north": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            },
+            "south": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "915",
+            "name" : "Taunton",
+            "direction": true,
+            "west": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            },
+            "east": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "916",
+            "name" : "Rossland",
+            "direction": true,
+            "west": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            },
+            "east": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "922",
+            "name" : "Bloor/Victoria",
+            "direction": false,
+            "sched": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening"
+            } 
+          },
+          {
+            "num"  : "923",
+            "name" : " Bayly / U of T Scarborough",
+            "direction": false,
+            "sched": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "950",
+            "name" : " Uxbrige / Port Perry  / UOIT",
+            "direction": false,
+            "sched": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening"
+            }
+          }
+        ],
+    "pickering": [
+          {
+            "num"  : "101",
+            "name" : "Industrial",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "103",
+            "name" : "Amberlea",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "105",
+            "name" : "West Shore",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "106",
+            "name" : "Bay Ridges",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "107",
+            "name" : "South Rosebank",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "109",
+            "name" : "Rouge Hill",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "saturday": "link/to/saturday"
+            }
+          },
+          {
+            "num"  : "110",
+            "name" : "Central Pickering",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "110A",
+            "name" : "Central Pickering",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "112",
+            "name" : "Brock",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "114",
+            "name" : "Dixie",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "116",
+            "name" : "Sheppard",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "117",
+            "name" : "Valley Farm",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "193",
+            "name" : "Community Bus",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "saturday": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "291",
+            "name" : "Community Bus",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "292",
+            "name" : "Community Bus",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "saturday": "link/to/saturday"
+            }
+          },
+          {
+            "num"  : false,
+            "name" : "Claremont Community Bus - Friday",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday"
+            }
+          }
+        ],
+    "ajax": [
+          {
+            "num"  : "218",
+            "name" : "Beach",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "219",
+            "name" : "Ravenscroft",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "221",
+            "name" : "North Central Ajax",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "222",
+            "name" : "Audley South",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "224",
+            "name" : "Harwood",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "225",
+            "name" : "Audley North",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "225A",
+            "name" : "Audley North",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "226",
+            "name" : "Duffins",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "232",
+            "name" : "Village",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "193",
+            "name" : "Community Bus",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "saturday": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "291",
+            "name" : "Community Bus",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "292",
+            "name" : "Community Bus",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "saturday": "link/to/saturday"
+            }
+          }
+        ],
+    "whitby": [
+          {
+            "num"  : "301",
+            "name" : "West Lynde/Otter Creek",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "302",
+            "name" : "Brock/Brooklin",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "303",
+            "name" : "Garden",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "304",
+            "name" : "Anderson",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "305",
+            "name" : "Thickson/Garrard",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "308",
+            "name" : "Whitby Shores",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "312",
+            "name" : "Community Bus",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "318",
+            "name" : "Otter Creek/Garden/Whitby Shores",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          }
+        ],
+    "oshawa": [
+          {
+            "num"  : "401",
+            "name" : "Simcoe",
+            "direction": true,
+            "north": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            },
+            "south": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "402",
+            "name" : "King",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "403",
+            "name" : "Park",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "403A",
+            "name" : "Park",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "403B",
+            "name" : "Park",
+            "direction": false,
+            "shed": {
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday"
+            }
+          },
+          {
+            "num"  : "405",
+            "name" : "Central Park",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday"
+            }
+          },
+          {
+            "num"  : "406",
+            "name" : "Dean",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "407",
+            "name" : "Ritson",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "408",
+            "name" : "Stevenson",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "409",
+            "name" : "Thornton",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "410",
+            "name" : "Olive/Harmony",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "411",
+            "name" : "Grandview",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "412",
+            "name" : "Adelaide",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "414",
+            "name" : "Community Bus",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday"
+            }
+          },
+          {
+            "num"  : "421",
+            "name" : "Townline",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening"
+            }
+          },
+          {
+            "num"  : "421A",
+            "name" : "Townline",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday"
+            }
+          }
+        ],
+    "clarington": [
+          {
+            "num"  : "501",
+            "name" : "Aspen Springs",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "502",
+            "name" : "Liberty",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday",
+              "evening": "link/to/evening",
+              "saturday": "link/to/saturday",
+              "sun_hol": "link/to/sun_hol"
+            }
+          },
+          {
+            "num"  : "503",
+            "name" : "Wilmot Creek",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday"
+            }
+          },
+          {
+            "num"  : "504",
+            "name" : "Orono/Newcastle",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday"
+            }
+          }
+
+
+        ],
+    "other": [
+          {
+            "num"  : false,
+            "name" : "Brock Community Bus",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday"
+            }
+          },
+          {
+            "num"  : false,
+            "name" : "Scugog Community Bus",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday"
+            }
+          },
+          {
+            "num"  : false,
+            "name" : "Uxbridge Community Bus",
+            "direction": false,
+            "shed": {
+              "weekday": "link/to/weekday"
+            }
+          }
+        ]
+  }
+}
