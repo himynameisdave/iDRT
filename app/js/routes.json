@@ -8,16 +8,16 @@
             "name" : "DRT Pulse",
             "direction": true,
             "west": {
-              "weekday": "link/to/weekday",
-              "evening": "link/to/evening",
-              "saturday": "link/to/saturday",
-              "sun_hol": "link/to/sun_hol"
+              "weekday": "/routes/900/west/900_west_week.pdf",
+              "evening": "/routes/900/west/900_west_eve.pdf",
+              "saturday": "/routes/900/west/900_west_sat.pdf",
+              "sun_hol": "/routes/900/west/900_west_sun_hol.pdf"
             },
             "east": {
-              "weekday": "link/to/weekday",
-              "evening": "link/to/evening",
-              "saturday": "link/to/saturday",
-              "sun_hol": "link/to/sun_hol"
+              "weekday": "/routes/900/east/900_east_week.pdf",
+              "evening": "/routes/900/east/900_east_eve.pdf",
+              "saturday": "/routes/900/east/900_east_sat.pdf",
+              "sun_hol": "/routes/900/east/900_east_sun_hol.pdf"
             }
           },
           {

@@ -1,0 +1,596 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ng",
+				"ngAnnotate"
+			],
+			[
+				"concat",
+				"concatCss"
+			],
+			[
+				"sel",
+				"selReg"
+			],
+			[
+				"border-bor",
+				"border-bottom-right-radius"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"border-r",
+				"border-bottom-right-radius"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"topba",
+				"topbarHeight"
+			],
+			[
+				"logo",
+				"logoRatio"
+			],
+			[
+				"BA",
+				"background-color"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
+				"c",
+				"cover"
+			],
+			[
+				"ba",
+				"background-size"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"back",
+				"background-repeat"
+			],
+			[
+				"call",
+				"callbackUrl"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"font-",
+				"font-family"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 5040,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/index.html",
+			"settings":
+			{
+				"buffer_size": 724,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/js/routes.json",
+			"settings":
+			{
+				"buffer_size": 21294,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/index.html",
+			"settings":
+			{
+				"buffer_size": 1220,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/partials/mobile.html",
+			"settings":
+			{
+				"buffer_size": 2047,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/js/app.js",
+			"settings":
+			{
+				"buffer_size": 4234,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 387.0,
+		"selected_items":
+		[
+			[
+				"Pakc",
+				"Package Control: List Packages"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Set Syntax: HTML (Erlang)"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/dlunny/Desktop/github-himynameisdave/iDRT",
+		"/Users/dlunny/Desktop/github-himynameisdave/iDRT/app",
+		"/Users/dlunny/Desktop/github-himynameisdave/iDRT/app/css",
+		"/Users/dlunny/Desktop/github-himynameisdave/iDRT/app/lib",
+		"/Users/dlunny/Desktop/github-himynameisdave/iDRT/app/lib/css",
+		"/Users/dlunny/Desktop/github-himynameisdave/iDRT/public/css"
+	],
+	"file_history":
+	[
+		"/Users/dlunny/Desktop/github-himynameisdave/iDRT/package.json",
+		"/Users/dlunny/Desktop/github-himynameisdave/iDRT/app/lib/css/style.css",
+		"/Users/dlunny/Desktop/github-himynameisdave/iDRT/app/css/style.less",
+		"/Users/dlunny/Desktop/github-himynameisdave/iDRT/app/css/style.css",
+		"/Users/dlunny/Desktop/github-himynameisdave/iDRT/app/lib/css/core.css",
+		"/Users/dlunny/Desktop/github-himynameisdave/iDRT/public/css/core.css",
+		"/Users/dlunny/Desktop/github-himynameisdave/iDRT/app/lib/js/app.js",
+		"/Users/dlunny/Desktop/github-himynameisdave/iDRT/app/lib/css/bootstrap.css",
+		"/Users/dlunny/Desktop/github-himynameisdave/iDRT/app/lib/css/font-awesome.css",
+		"/Users/dlunny/Desktop/github-himynameisdave/iDRT/public/js/core.js",
+		"/Users/dlunny/Desktop/github-himynameisdave/iDRT/app/css/core.less",
+		"/Users/dlunny/Desktop/github-himynameisdave/iDRT/node_modules/gulp-csscomb/index.js",
+		"/Users/dlunny/Desktop/github-himynameisdave/iDRT/app/partials/desktop.html",
+		"/Users/dlunny/Desktop/.csscomb.json",
+		"/Users/dlunny/fct/dating/src/apps/PublicDating/controllers/Main/templates/untitled",
+		"/Users/dlunny/fct/dating/src/apps/PublicDating/public/ihookup/css/mobile/splash.css",
+		"/Users/dlunny/fct/dating/src/apps/PublicDating/public/ihookup/index.php",
+		"/Users/dlunny/fct/dating/src/apps/PublicDating/assets/ihookup/desktop/css/screen.sass",
+		"/Users/dlunny/fct/dating/src/apps/PublicDating/assets/ihookup/desktop/css/admin.sass",
+		"/Users/dlunny/fct/tour-templates/handlebars/index.html.handlebars",
+		"/Users/dlunny/fct/tour-templates/handlebars/partials/form/username.html.handlebars",
+		"/Users/dlunny/fct/tour-templates/handlebars/partials/form/site-for.html.handlebars",
+		"/Users/dlunny/fct/tour-templates/handlebars/partials/form/relationship-status.html.handlebars",
+		"/Users/dlunny/fct/tour-templates/handlebars/partials/form/password.html.handlebars",
+		"/Users/dlunny/fct/tour-templates/handlebars/partials/form/looking-for.html.handlebars",
+		"/Users/dlunny/fct/tour-templates/handlebars/partials/form/location.html.handlebars",
+		"/Users/dlunny/fct/tour-templates/handlebars/partials/form/height.html.handlebars",
+		"/Users/dlunny/Desktop/fct",
+		"/Users/dlunny/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/dlunny/fct/tour-templates/handlebars/partials/form/age-seeking.html.handlebars",
+		"/Users/dlunny/fct/tour-templates/handlebars/partials/form/birthday-dynamic.html.handlebars",
+		"/Users/dlunny/fct/tour-templates/handlebars/partials/form/birthday.html.handlebars",
+		"/Users/dlunny/fct/tour-templates/handlebars/partials/form/body-type-seeking.html.handlebars",
+		"/Users/dlunny/fct/tour-templates/handlebars/partials/form/body-type.html.handlebars",
+		"/Users/dlunny/fct/tour-templates/handlebars/partials/form/captcha.html.handlebars",
+		"/Users/dlunny/fct/tour-templates/handlebars/partials/form/email.html.handlebars",
+		"/Users/dlunny/fct/tour-templates/handlebars/partials/form/ethnicity.html.handlebars",
+		"/Users/dlunny/fct/tour-templates/handlebars/partials/form/ethnicity-seeking.html.handlebars",
+		"/Users/dlunny/fct/tour-templates/handlebars/partials/form/fetishes.html.handlebars",
+		"/Users/dlunny/Desktop/github-himynameisdave/torrent.fm/gulpfile.js",
+		"/Users/dlunny/Desktop/github-himynameisdave/torrent.fm/feature-request.md",
+		"/Users/dlunny/Desktop/github-himynameisdave/torrent.fm/app/css/style.less",
+		"/Users/dlunny/Desktop/github-himynameisdave/torrent.fm/app/index.html",
+		"/Users/dlunny/Desktop/github-himynameisdave/torrent.fm/app/js/app.js",
+		"/Users/dlunny/Desktop/github-himynameisdave/torrent.fm/app/css/core.less",
+		"/Users/dlunny/Desktop/github-himynameisdave/server/howto.txt",
+		"/Users/dlunny/Desktop/github-himynameisdave/torrent.fm/server.js",
+		"/Users/dlunny/fct/tour-templates/handlebars/partials/form/gender-seeking.html.handlebars",
+		"/Users/dlunny/fct/tour-templates/handlebars/partials/form/gender.html.handlebars",
+		"/Users/dlunny/Desktop/dev/server/server.js",
+		"/Users/dlunny/ftc/tour-email-pages/skins/mycasualhookup/infrastructure/abuse/src/templates/index.html.handlebars",
+		"/Users/dlunny/dev/styleguide/javascript/blocks/readme.md",
+		"/Users/dlunny/Desktop/dev/server.js"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/dlunny/fct/dating"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"@media",
+			"jsmin",
+			"copy",
+			"}\n",
+			"appear",
+			"fullheight",
+			"<h1 class=\"cw-logo\">SweetDiscreet</h1>",
+			"sp-footer-copyright",
+			"social",
+			"sp-footer-list-links",
+			"sp-footer-list-item-link",
+			"sp-footer-idate",
+			"sp-award",
+			"max-height",
+			"sp-section-6",
+			"sp-footer",
+			"sp-footer-idate",
+			"class=\"sp-footer-idate\"",
+			"fetishes-{{this.value}}"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5040,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3766,
+								3766
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Seti_monokai (SL).tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1728.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "public/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 724,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								491,
+								491
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Seti_monokai (SL).tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/js/routes.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21294,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2565,
+								2565
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Seti_monokai (SL).tmTheme",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 786.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "app/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1220,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								899,
+								899
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Seti_monokai (SL).tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/partials/mobile.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2047,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1427,
+								1427
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Seti_monokai (SL).tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/js/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4234,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1505,
+								1505
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Seti_monokai (SL).tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 561.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.492070480115,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "iDRT.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 179.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
