@@ -44,6 +44,7 @@ app.controller('Controller', function ($scope, $state, $log) {
     if( !$scope.smellsLikeAMobileDevice() ){
       $state.go('desktop');
     }
+    $scope.activeTemplate = 'partials/main.html';
   }
 
   var isMobileDevice = function(){
@@ -64,6 +65,14 @@ app.controller('Controller', function ($scope, $state, $log) {
     }
   };
 
+
+  $scope.getSched = function(sched){
+    $scope.activeTemplate = 'partials/sched-view.html';
+  };
+
+  $scope.backToMain = function(){
+    $scope.activeTemplate = 'partials/main.html';
+  };
 
   $(document).ready(init);
 });

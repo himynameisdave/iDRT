@@ -1,0 +1,57 @@
+<section class="row routing">
+
+    <!--Where are you?-->
+    <div  class="col-xs-12 col-sm-10 col-md-8 selector">
+      <label class="selector-label">
+        <span class="selector-label-hilite">What</span> region are you looking for?
+      </label>
+      <div class="selector-border"></div>
+      <select   class="selector-selection"
+                ng-model="selected.region"
+                ng-options="region as region for region in regions">
+      </select>
+    </div>
+
+    <!--What route-->
+    <div  class="col-xs-12 col-sm-10 col-md-8 selector"
+          ng-show="selected.region">
+      <label class="selector-label">
+        <span class="selector-label-hilite">What</span> route are you taking?
+      </label>
+      <div class="selector-border"></div>
+      <select   class="selector-selection"
+                ng-model="selected.route"
+                ng-options="route as route for route in routesList">
+      </select>
+    </div>
+
+    <!--What route-->
+    <div  class="col-xs-12 col-sm-10 col-md-8 selector"
+          ng-show="selected.route">
+      <label class="selector-label">
+        <span class="selector-label-hilite">When</span> are you traveling?
+      </label>
+      <div class="selector-border"></div>
+      <select   class="selector-selection"
+                ng-model="selected.time">
+      </select>
+    </div>
+
+  </section>
+
+  <section class="row action-btns">
+
+    <div class="col-xs-6 action-btn-box">
+      <button   class="btn action-btn-sched"
+                ng-click="getSched(activeSched)">
+        Get Schedule
+      </button>
+    </div>
+
+    <div class="col-xs-6 action-btn-box">
+      <button class="btn action-btn-map">
+        Get Map
+      </button>
+    </div>
+
+  </section>
