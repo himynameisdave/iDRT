@@ -12,13 +12,6 @@ var gulp  = require('gulp'),
 //  //                                            //  //
 ////////////////////////////////////////////////////////
 
-
-gulp.task( 'anno', function(){
-
-  console.log(plug.ngAnnotate);
-});
-
-
 gulp.task('build', [ 'build-js', 'build-css', 'build-assets' ]);
 
 //  JS production task
@@ -66,7 +59,7 @@ gulp.task('build-js', function(){
 
 gulp.task('build-css', function(){
 
-  console.log('Step 4: Compile LESS');
+  console.log('Step 4: Compile LESS, autoprefix, combine media queries, & comb CSS');
   gulp.src('app/css/style.less')
     .pipe(plug.less({ style: 'compressed' }))
     .on('error', function(e){
@@ -77,6 +70,7 @@ gulp.task('build-css', function(){
         browsers: ['last 3 versions'],
         cascade: true
     }))
+    .pipe(plug.combineMediaQueries())
     .pipe(plug.csscomb())
     .pipe(gulp.dest('app/lib/css/'));
 
@@ -128,6 +122,22 @@ gulp.task( 'build-assets', function(){
         .pipe(gulp.dest( 'public/' ));
 
 });
+
+
+//////////////////
+//    DEPLOY    //
+//////////////////
+gulp.task('deploy', [ 'build', 'gh-pages' ]);
+
+gulp.task('gh-pages', function(){
+
+
+
+
+
+
+});
+
 
 
 //////////////////////////////////////////////////////////
