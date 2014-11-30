@@ -79,7 +79,13 @@ gulp.task('build-css', function(){
     .pipe(plug.concatCss('core.css'))
     .pipe(plug.uncss({
       //  globbing dont work none
-      html: [ 'app/index.html', 'app/partials/desktop.html', 'app/partials/mobile.html' ]
+      html: [   'app/index.html',
+                'app/partials/desktop.html',
+                'app/partials/mobile.html',
+                'app/partials/header.html',
+                'app/partials/main.html',
+                'app/partials/sched-view.html',
+            ]
     }))
     .pipe(plug.minifyCss())
     .pipe(gulp.dest('public/css/'));

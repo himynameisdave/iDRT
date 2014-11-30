@@ -95,6 +95,8 @@ html,
 body,
 .ui-view-box,
 .app-wrap {
+  width: 100%;
+  height: 100%;
   width: 100vw;
   height: 100vh;
   background: #00a550;
@@ -206,7 +208,7 @@ body,
 .selector-label .selector-label-hilite {
   color: #FBAF3F;
 }
-@media (min-width : 420px) {
+@media screen and (min-width : 420px) {
   .selector-label {
     font-size: 16px;
     line-height: 1.618;
@@ -243,7 +245,7 @@ select.selector-selection:focus {
   outline: none;
   background: #FBAF3F;
 }
-@media (min-width : 420px) {
+@media screen and (min-width : 420px) {
   select.selector-selection {
     font-size: 16px;
   }
@@ -273,7 +275,7 @@ select.selector-selection:focus {
   background: #00a550;
   color: #fff;
 }
-@media (min-width : 420px) {
+@media screen and (min-width : 420px) {
   .action-btns .action-btn-box .btn {
     font-size: 15px;
   }

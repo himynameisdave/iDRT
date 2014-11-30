@@ -29,10 +29,10 @@ footer, header, hgroup, menu, nav, section
 { display:      block; }
 
 *{ .box-sizing() }
-body, html { 
-  margin: 0; 
+body, html {
+  margin: 0;
   font-family: 'Varela Round', 'Arial Round', 'Gill Sans Round', Helvetica, Arial, sans-serif;
-  height: 100%; 
+  height: 100%;
   font-size:    @base-font-size; 
   font-weight:  @base-font-weight; 
   line-height:  @base-line-height;
@@ -44,7 +44,7 @@ ol, ul{
 img { max-width:100%; }
 input[type="text"], input[type="number"], input[type="password"], textarea, select {
   position: relative;
-  font-family:inherit; 
+  font-family:inherit;
   font-size:inherit;
   font-weight: inherit;
   height:auto;
@@ -58,7 +58,11 @@ svg { overflow:visible; }
 input[type="submit"], button { outline: none; &:focus{ outline: none; } }
 
 
-html, body, .ui-view-box, .app-wrap { width: 100vw; height: 100vh; background: @drtGreen; color: #fff; }
+html, body, .ui-view-box, .app-wrap { 
+  width: 100%; height: 100%;//fallback to these
+  width: 100vw; height: 100vh;//because im a cool web developer and its 2015(ish)
+  background: @drtGreen; color: #fff;
+}
 
 .fullheight {
   height:100%;
