@@ -260,7 +260,7 @@ select.selector-selection:focus {
 .action-btns .action-btn-box .btn {
   width: 75%;
   font-size: 13px;
-  border-radius: 1px;
+  border-radius: 3px;
   -webkit-transition: all 0.325s;
   -moz-transition: all 0.325s;
   -o-transition: all 0.325s;
@@ -268,10 +268,15 @@ select.selector-selection:focus {
 }
 .action-btns .action-btn-box .btn:hover {
   background: #fff;
-  border-radius: 4px;
+  border-radius: 6px;
   color: #00a550;
 }
 .action-btns .action-btn-box .btn:active {
+  background: #00a550;
+  color: #fff;
+}
+.action-btns .action-btn-box .btn:focus {
+  outline: none;
   background: #00a550;
   color: #fff;
 }

@@ -8,6 +8,7 @@
       <div class="selector-border"></div>
       <select   class="selector-selection"
                 ng-model="selected.region"
+                ng-change="pickedNewRegion()"
                 ng-options="region as region for region in regions">
       </select>
     </div>
@@ -21,31 +22,52 @@
       <div class="selector-border"></div>
       <select   class="selector-selection"
                 ng-model="selected.route"
+                ng-change="pickedNewRoute()"
                 ng-options="route as route for route in routesList">
       </select>
     </div>
 
-    <!--What route-->
+
+    <!--What direction? (Optional)-->
     <div  class="col-xs-12 col-sm-10 col-md-8 selector"
-          ng-show="selected.route">
+          ng-show="selected.route && selected.directional">
+      <label class="selector-label">
+        <span class="selector-label-hilite">What direction</span> are you traveling?
+      </label>
+      <div class="selector-border"></div>
+      <select   class="selector-selection"
+                ng-model="selected.direction"
+                ng-change="pickedNewDirection()"
+                ng-options="dir as dir for dir in dirList">
+      </select>
+    </div>
+
+
+
+    <!--What day?-->
+    <div  class="col-xs-12 col-sm-10 col-md-8 selector"
+          ng-show="selected.routePickedAlready">
       <label class="selector-label">
         <span class="selector-label-hilite">When</span> are you traveling?
       </label>
       <div class="selector-border"></div>
       <select   class="selector-selection"
-                ng-model="selected.time">
+                ng-model="selected.day"
+                ng-change="pickedNewDay()"
+                ng-options="day as day for day in daysList">
       </select>
     </div>
 
   </section>
 
-  <section class="row action-btns">
+  <section class="row action-btns" ng-show="selected.showBtns">
 
     <div class="col-xs-6 action-btn-box">
-      <button   class="btn action-btn-sched"
-                ng-click="getSched(activeSched)">
+      <a  class="btn action-btn-sched"
+          ng-href="{{activeSched}}"
+          target="_sched">
         Get Schedule
-      </button>
+      </a>
     </div>
 
     <div class="col-xs-6 action-btn-box">

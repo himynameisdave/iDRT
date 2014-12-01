@@ -7,13 +7,16 @@
             "num"  : "900",
             "name" : "DRT Pulse",
             "direction": true,
+            "directions": [ "West", "East" ],
             "west": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "/routes/900/west/900_west_week.pdf",
               "evening": "/routes/900/west/900_west_eve.pdf",
               "saturday": "/routes/900/west/900_west_sat.pdf",
               "sun_hol": "/routes/900/west/900_west_sun_hol.pdf"
             },
             "east": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "/routes/900/east/900_east_week.pdf",
               "evening": "/routes/900/east/900_east_eve.pdf",
               "saturday": "/routes/900/east/900_east_sat.pdf",
@@ -24,13 +27,16 @@
             "num"  : "910",
             "name" : "Whitby GO / Campus Connect",
             "direction": true,
+            "directions": [ "North", "South" ],
             "north": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
               "sun_hol": "link/to/sun_hol"
             },
             "south": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -41,13 +47,16 @@
             "num"  : "915",
             "name" : "Taunton",
             "direction": true,
+            "directions": [ "West", "East" ],
             "west": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
               "sun_hol": "link/to/sun_hol"
             },
             "east": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -58,13 +67,16 @@
             "num"  : "916",
             "name" : "Rossland",
             "direction": true,
+            "directions": [ "West", "East" ],
             "west": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
               "sun_hol": "link/to/sun_hol"
             },
             "east": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -76,6 +88,7 @@
             "name" : "Bloor/Victoria",
             "direction": false,
             "sched": {
+              "days_list": [ "Weekday", "Evening" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening"
             }
@@ -85,6 +98,7 @@
             "name" : " Bayly / U of T Scarborough",
             "direction": false,
             "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -96,6 +110,7 @@
             "name" : " Uxbrige / Port Perry  / UOIT",
             "direction": false,
             "sched": {
+              "days_list": [ "Weekday", "Evening" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening"
             }
@@ -106,7 +121,8 @@
             "num"  : "101",
             "name" : "Industrial",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -117,7 +133,8 @@
             "num"  : "103",
             "name" : "Amberlea",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -128,7 +145,8 @@
             "num"  : "105",
             "name" : "West Shore",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -139,7 +157,8 @@
             "num"  : "106",
             "name" : "Bay Ridges",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -150,7 +169,8 @@
             "num"  : "107",
             "name" : "South Rosebank",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -161,7 +181,8 @@
             "num"  : "109",
             "name" : "Rouge Hill",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Saturday" ],
               "weekday": "link/to/weekday",
               "saturday": "link/to/saturday"
             }
@@ -170,7 +191,8 @@
             "num"  : "110",
             "name" : "Central Pickering",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -181,7 +203,8 @@
             "num"  : "110A",
             "name" : "Central Pickering",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "saturday": "link/to/saturday",
               "sun_hol": "link/to/sun_hol"
@@ -191,7 +214,8 @@
             "num"  : "112",
             "name" : "Brock",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -202,7 +226,8 @@
             "num"  : "114",
             "name" : "Dixie",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -213,7 +238,8 @@
             "num"  : "116",
             "name" : "Sheppard",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -224,7 +250,8 @@
             "num"  : "117",
             "name" : "Valley Farm",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "sun_hol": "link/to/sun_hol"
             }
@@ -233,7 +260,8 @@
             "num"  : "193",
             "name" : "Community Bus",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Saturday" ],
               "weekday": "link/to/weekday",
               "saturday": "link/to/sun_hol"
             }
@@ -242,7 +270,8 @@
             "num"  : "291",
             "name" : "Community Bus",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "saturday": "link/to/saturday",
               "sun_hol": "link/to/sun_hol"
@@ -252,7 +281,8 @@
             "num"  : "292",
             "name" : "Community Bus",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Saturday" ],
               "weekday": "link/to/weekday",
               "saturday": "link/to/saturday"
             }
@@ -261,7 +291,8 @@
             "num"  : false,
             "name" : "Claremont Community Bus - Friday",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday" ],
               "weekday": "link/to/weekday"
             }
           }
@@ -271,7 +302,8 @@
             "num"  : "218",
             "name" : "Beach",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -282,7 +314,8 @@
             "num"  : "219",
             "name" : "Ravenscroft",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -293,7 +326,8 @@
             "num"  : "221",
             "name" : "North Central Ajax",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -304,7 +338,8 @@
             "num"  : "222",
             "name" : "Audley South",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -315,7 +350,8 @@
             "num"  : "224",
             "name" : "Harwood",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -326,7 +362,8 @@
             "num"  : "225",
             "name" : "Audley North",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -337,7 +374,8 @@
             "num"  : "225A",
             "name" : "Audley North",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -348,7 +386,8 @@
             "num"  : "226",
             "name" : "Duffins",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -359,7 +398,8 @@
             "num"  : "232",
             "name" : "Village",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -370,7 +410,8 @@
             "num"  : "193",
             "name" : "Community Bus",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Saturday" ],
               "weekday": "link/to/weekday",
               "saturday": "link/to/sun_hol"
             }
@@ -379,7 +420,8 @@
             "num"  : "291",
             "name" : "Community Bus",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "sun_hol": "link/to/sun_hol"
             }
@@ -388,7 +430,8 @@
             "num"  : "292",
             "name" : "Community Bus",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Saturday" ],
               "weekday": "link/to/weekday",
               "saturday": "link/to/saturday"
             }
@@ -399,7 +442,8 @@
             "num"  : "301",
             "name" : "West Lynde/Otter Creek",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -410,7 +454,8 @@
             "num"  : "302",
             "name" : "Brock/Brooklin",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -421,7 +466,8 @@
             "num"  : "303",
             "name" : "Garden",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -432,7 +478,8 @@
             "num"  : "304",
             "name" : "Anderson",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -443,7 +490,8 @@
             "num"  : "305",
             "name" : "Thickson/Garrard",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -454,7 +502,8 @@
             "num"  : "308",
             "name" : "Whitby Shores",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -465,7 +514,8 @@
             "num"  : "312",
             "name" : "Community Bus",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -476,7 +526,8 @@
             "num"  : "318",
             "name" : "Otter Creek/Garden/Whitby Shores",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -489,13 +540,16 @@
             "num"  : "401",
             "name" : "Simcoe",
             "direction": true,
+            "directions": [ "North", "South" ],
             "north": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
               "sun_hol": "link/to/sun_hol"
             },
             "south": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -506,7 +560,8 @@
             "num"  : "402",
             "name" : "King",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -517,7 +572,8 @@
             "num"  : "403",
             "name" : "Park",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -528,7 +584,8 @@
             "num"  : "403A",
             "name" : "Park",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "saturday": "link/to/saturday",
               "sun_hol": "link/to/sun_hol"
@@ -538,7 +595,8 @@
             "num"  : "403B",
             "name" : "Park",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Evening", "Saturday" ],
               "evening": "link/to/evening",
               "saturday": "link/to/saturday"
             }
@@ -547,7 +605,8 @@
             "num"  : "405",
             "name" : "Central Park",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday"
@@ -557,7 +616,8 @@
             "num"  : "406",
             "name" : "Dean",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -568,7 +628,8 @@
             "num"  : "407",
             "name" : "Ritson",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -579,7 +640,8 @@
             "num"  : "408",
             "name" : "Stevenson",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -590,7 +652,8 @@
             "num"  : "409",
             "name" : "Thornton",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -601,7 +664,8 @@
             "num"  : "410",
             "name" : "Olive/Harmony",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -612,7 +676,8 @@
             "num"  : "411",
             "name" : "Grandview",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -623,7 +688,8 @@
             "num"  : "412",
             "name" : "Adelaide",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -634,7 +700,8 @@
             "num"  : "414",
             "name" : "Community Bus",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday" ],
               "weekday": "link/to/weekday"
             }
           },
@@ -642,7 +709,8 @@
             "num"  : "421",
             "name" : "Townline",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening"
             }
@@ -651,7 +719,8 @@
             "num"  : "421A",
             "name" : "Townline",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday" ],
               "weekday": "link/to/weekday"
             }
           }
@@ -661,7 +730,8 @@
             "num"  : "501",
             "name" : "Aspen Springs",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -672,7 +742,8 @@
             "num"  : "502",
             "name" : "Liberty",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday", "Evening", "Saturday", "Sunday/Holiday" ],
               "weekday": "link/to/weekday",
               "evening": "link/to/evening",
               "saturday": "link/to/saturday",
@@ -683,7 +754,8 @@
             "num"  : "503",
             "name" : "Wilmot Creek",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday" ],
               "weekday": "link/to/weekday"
             }
           },
@@ -691,7 +763,8 @@
             "num"  : "504",
             "name" : "Orono/Newcastle",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday" ],
               "weekday": "link/to/weekday"
             }
           }
@@ -703,7 +776,8 @@
             "num"  : false,
             "name" : "Brock Community Bus",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday" ],
               "weekday": "link/to/weekday"
             }
           },
@@ -711,7 +785,8 @@
             "num"  : false,
             "name" : "Scugog Community Bus",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday" ],
               "weekday": "link/to/weekday"
             }
           },
@@ -719,7 +794,8 @@
             "num"  : false,
             "name" : "Uxbridge Community Bus",
             "direction": false,
-            "shed": {
+            "sched": {
+              "days_list": [ "Weekday" ],
               "weekday": "link/to/weekday"
             }
           }
